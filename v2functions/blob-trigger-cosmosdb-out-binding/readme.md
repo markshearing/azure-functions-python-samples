@@ -107,8 +107,9 @@ az storage container create  \
 
 Create a Cosmos DB Account
 ```sh
-COSMOSDB_ACCOUNT_NAME="azfuncv2db"
-RESOURCE_GROUP="RG-azfuncv2"
+COSMOSDB_ACCOUNT_NAME="mjsazfuncv2db"
+#RESOURCE_GROUP="RG-azfuncv2"
+RESOURCE_GROUP=$COGNITIVE_RESOURCE_GROUP 
 az cosmosdb create \
     --name $COSMOSDB_ACCOUNT_NAME \
     --kind GlobalDocumentDB \
