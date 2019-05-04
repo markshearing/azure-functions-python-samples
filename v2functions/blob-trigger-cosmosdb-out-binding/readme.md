@@ -84,7 +84,8 @@ Create an Azure Storage Account
 
 RESOURCE_GROUP=$COGNITIVE_RESOURCE_GROUP 
 REGION="eastus"
-STORAGE_ACCOUNT="teststore"
+### STORAGE_ACCOUNT="teststore"
+STORAGE_ACCOUNT="mjsteststore"
 az storage account create --name $STORAGE_ACCOUNT \
     --location $REGION \
     --resource-group $RESOURCE_GROUP \
