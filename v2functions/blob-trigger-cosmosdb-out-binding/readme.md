@@ -52,7 +52,7 @@ First, create a Computer Vision resource
 
 ```bash
 COGNITIVE_RESOURCE_GROUP="rg_cognitive_test"
-REGION="eastasia"
+REGION="eastus"
 COGNITIVE_ACCOUNT_NAME="mycompvision001"
 
 echo "Create Resource Group: $COGNITIVE_RESOURCE_GROUP"
@@ -81,7 +81,7 @@ echo "API KEY: $COMPUTER_VISION_API_KEY"
 Create an Azure Storage Account
 ```bash
 RESOURCE_GROUP="rg-testfunctions"
-REGION="japaneast"
+REGION="eastus"
 STORAGE_ACCOUNT="teststore"
 az storage account create --name $STORAGE_ACCOUNT \
     --location $REGION \
