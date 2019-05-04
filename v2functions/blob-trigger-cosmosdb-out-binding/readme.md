@@ -80,7 +80,9 @@ echo "API KEY: $COMPUTER_VISION_API_KEY"
 
 Create an Azure Storage Account
 ```bash
-RESOURCE_GROUP="rg-testfunctions"
+### RESOURCE_GROUP="rg-testfunctions"
+
+RESOURCE_GROUP=$COGNITIVE_RESOURCE_GROUP 
 REGION="eastus"
 STORAGE_ACCOUNT="teststore"
 az storage account create --name $STORAGE_ACCOUNT \
